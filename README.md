@@ -41,7 +41,7 @@ docker-compose up
 ```
 ## Создание и применение миграций
 ### После запуска контейнеров в Docker Desktop открыть терминал контейнера `stripe_web`:
-<img src= "https://imgur.com/e2QeRtn.png" width = "1000" height = "100">
+<img src= "https://imgur.com/e2QeRtn.png" width = "1000" height = "120">
 
 ### Создание миграций
 ```

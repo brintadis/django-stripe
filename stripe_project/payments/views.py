@@ -41,9 +41,10 @@ def create_checkout_session(request, item_id):
 
 @csrf_exempt
 def item_detail(request, item_id):
-    item = Item.objects.filter(id=item_id).first()
-    context = {
-        'item': item,
-    }
+    if request.method == 'GET':
+        item = Item.objects.filter(id=item_id).first()
+        context = {
+            'item': item,
+        }
 
-    return render(request, 'payments/item_detail.html', context=context)
+        return render(request, 'payments/item_detail.html', context=context)

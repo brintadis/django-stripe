@@ -15,6 +15,9 @@ env\Scripts\activate
 ```
 pip install -r requirments.txt
 ```
+### Получение Stripe api ключей
+Регистрируем аккаунт [Stripe](https://dashboard.stripe.com/settings/account/) и указываем `Account name`.
+Stripe ключи можно получить [здесь](https://dashboard.stripe.com/test/apikeys).
 ### Создаем файл конфигурации `.env` с необходимыми переменными
 ```
 # DB

@@ -58,6 +58,11 @@ python stripe_project/manage.py migrate
 ```
 python stripe_project/manage.py createsuperuser
 ```
+***
+```GET http://localhost:8000/item/<id>``` - HTML страница с информацией о выбранном `item` с кнопкой купить.
+
+```GET http://localhost:8000/buy/<id>``` - получение Stripe Session Id для оплаты выбранного `item`.
+***
 ## Выполненные бонусные задачи:
 ### - Запуск используя Docker
 ### - Использование environment variables

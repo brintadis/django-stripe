@@ -42,7 +42,7 @@ docker-compose build
 ```
 docker-compose up
 ```
-## Создание и применение миграций
+## Создание и применение миграций, добавление записи item в базу данных
 ### После запуска контейнеров в Docker Desktop открыть терминал контейнера `stripe_web`:
 <img src= "https://imgur.com/e2QeRtn.png" width = "1000" height = "120">
 
@@ -58,7 +58,11 @@ python stripe_project/manage.py migrate
 ```
 python stripe_project/manage.py createsuperuser
 ```
+### Создание записи в бд делаем через админ панель
+```http://localhost:8000/admin```
+#### Вводим данные, которые указывали в предыдущем пункте.
 ***
+## Документация
 ```GET http://localhost:8000/item/<id>``` - HTML страница с информацией о выбранном `item` с кнопкой купить.
 
 ```GET http://localhost:8000/buy/<id>``` - получение Stripe Session Id для оплаты выбранного `item`.

@@ -64,7 +64,7 @@ python stripe_project/manage.py createsuperuser
 ```GET http://localhost:8000/buy/<id>``` - получение Stripe Session Id для оплаты выбранного `item`.
 ***
 ## Выполненные бонусные задачи:
-### - Запуск используя Docker
-### - Использование environment variables
-### - Просмотр Django Моделей в Django Admin панели
+- Запуск используя Docker
+- Использование environment variables
+- Просмотр Django Моделей в Django Admin панели
 
